@@ -1,0 +1,11 @@
+$l-dev: 1260px;
+$m-dev: 760px;
+
+// Mixin de media-queries
+@mixin d($size) {
+ @if $size == m {
+    @media screen and (max-width: #{$l-dev - 1}) {
+      @content;
+    }
+  }
+}
