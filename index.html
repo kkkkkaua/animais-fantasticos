@@ -6,7 +6,7 @@
     <title>Animais Fantásticos</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link
-      href="https://fonts.googleapis.com/css?family=Playfair+Display+SC"
+      href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono:700|Playfair+Display+SC"
       rel="stylesheet"
     />
     <script>
@@ -20,21 +20,25 @@
         <button data-menu="button" aria-expanded="false" aria-controls="menu">
           Menu
         </button>
-        <ul data-menu="list">
+        <ul data-menu="list" id="menu">
           <li><a href="#animais">Animais</a></li>
           <li data-dropdown>
             <a href="sobre.html">Sobre</a>
             <ul class="dropdown-menu">
-              <li><a href="empresa.html">Empresa</a></li>
+              <li><a href="empresa.html">A Empresa</a></li>
               <li><a href="equipe.html">Equipe</a></li>
-              <li><a href="socios.html">Socios</a></li>
+              <li><a href="socios.html">Sócios</a></li>
               <li><a href="investidores.html">Investidores</a></li>
             </ul>
           </li>
           <li><a href="#faq">Faq</a></li>
           <li><a href="#contato">Contato</a></li>
-          <li><a href="https://kauaport.netlify.app">Dev</a></li>
-          <li><a data-modal="abrir" href="login.html">Login →</a></li>
+          <li><a href="kauaport.netlify.app">dev</a></li>
+          <li>
+            <a data-modal="abrir" href="login.html"
+              >Login <span class="arrow-black"></span
+            ></a>
+          </li>
         </ul>
       </nav>
       <section class="grid-section animais" data-anime="scroll" id="animais">
@@ -72,8 +76,9 @@
               semelhantes às pupilas verticais dos felídeos.
             </p>
             <p>
-              Também apresentam como particularidade suas pupilas ovais,
-              semelhantes às pupilas verticais dos felídeos.
+              As raposas são animais mamíferos e onívoros pertencentes à família
+              Canidae. São vulpídeos de porte médio, caracterizados por um
+              focinho comprido e uma cauda longa e peluda.
             </p>
           </section>
 
@@ -253,7 +258,7 @@
         <div
           class="mapa"
           data-tooltip
-          aria-label="Endereço próximo ao estacionamento"
+          aria-label="Endereço próximo ao estacionamento."
         >
           <img src="img/mapa.png" />
         </div>
@@ -276,7 +281,7 @@
 
     <section class="modal-container" data-modal="container">
       <div class="modal">
-        <button class="fechar" data-modal="fechar">x</button>
+        <button data-modal="fechar" class="fechar"></button>
         <form action="">
           <label for="email">Email</label>
           <input type="text" for="email" id="email" />
@@ -286,7 +291,6 @@
         </form>
       </div>
     </section>
-
-    <script type="module" src="js/script.js"></script>
+    <script src="main.js"></script>
   </body>
 </html>
